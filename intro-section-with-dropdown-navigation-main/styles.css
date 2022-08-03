@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    background-color: hsla(0, 0%, 98%, 0.859);
+}
+
+
+/* Styles for header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    align-items: flex-start;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.menu_icon {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 8%;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: -1px 22px 15px -17px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: -1px 22px 15px -17px rgba(0, 0, 0, 0.58);
+    box-shadow: -1px 22px 15px -17px rgba(0, 0, 0, 0.58);
+}
+
+.prueba {
+    display: block;
+}
+
+.dropdown ul {
+    display: grid;
+    grid-template-columns: 20px auto;
+}
+
+.list {
+    padding: .2rem;
+    list-style: none;
+}
+
+.list li {
+    margin: .3rem;
+    width: 100%;
+}
+
+#first_drop {
+    left: 150px;
+}
+
+#second_drop {
+    left: 330px;
+}
+
+#second_drop ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.principalMenu {
+    display: flex;
+    padding: .5rem;
+    justify-content: space-around;
+}
+
+.principalMenu div {
+    padding: 0.5rem 0.4rem;
+    color: hsl(0, 0%, 41%);
+    margin: 0rem 0.3rem;
+}
+
+.principalMenu li:hover {
+    color: black;
+}
+
+.left {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left div {
+    padding: .4rem .5rem;
+    color: hsl(0, 0%, 41%)
+}
+
+.left div:hover {
+    color: black;
+}
+
+#btnRegister {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+/*Styles main*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.description h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 8.5rem 3rem;
+}
+
+.description p {
+    margin: 1rem .4rem;
+    color: hsl(0, 0%, 41%);
+    margin: 2rem 3rem;
+    max-width: 55%;
+    text-align: justify;
+}
+
+.btnPrincipal {
+    padding: 15px 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    width: 20%;
+    margin: 3rem 3rem;
+    text-align: center;
+}
+
+.btnPrincipal:hover {
+    background-color: white;
+    color: black;
+}
+
+.photografies {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photografies img {
+    padding: 1rem;
+    width: 70px;
+}
+
+#banner {
+    margin: .5rem;
+    background-image: url(images/image-hero-desktop.png);
+    width: 45%;
+    background-size: cover;
+    height: 90vmin;
+}
+
+
+/*Footer*/
+
+
+/*Footer*/
+
+.myInfo {
+    display: flex;
+    flex-direction: column;
+    padding: .9rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+
+.myInfo a {
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.3rem;
+}
+
+.social p {
+    margin: 10px;
+}
+
+.socialMedia {
+    width: 30px;
+}
+
+
+/*mobile*/
+
+.container_list {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.close_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    .container_list {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        height: 180vmin;
+        top: 0%;
+        left: 50%;
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .menu_icon {
+        width: 30px;
+        height: 20px;
+        display: block;
+    }
+    .description {
+        width: 100%;
+    }
+    .principalMenu {
+        flex-direction: column;
+    }
+    .right {
+        width: 100%;
+    }
+    .close_menu {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+    .dropdown {
+        position: static;
+    }
+    .principalMenu div {
+        margin: 0;
+    }
+    .item {
+        width: 100%;
+    }
+    .left {
+        flex-direction: column;
+        width: 100%;
+    }
+    .description h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 3rem 0rem;
+    }
+    .description p {
+        max-width: 100%;
+        text-align: -webkit-center;
+        margin: 0rem 3rem;
+    }
+    .btnPrincipal {
+        width: 70%;
+    }
+    .photografies {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #banner {
+        width: 100%;
+        margin: 0%;
+        background-image: url(images/image-hero-mobile.png);
+    }
+}

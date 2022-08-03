@@ -89,6 +89,9 @@ main {
     color: white;
 }
 
+
+/*Footer*/
+
 .myInfo {
     display: flex;
     flex-direction: column;
