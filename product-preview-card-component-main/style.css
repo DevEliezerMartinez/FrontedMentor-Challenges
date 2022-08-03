@@ -116,7 +116,7 @@ main {
     width: 30px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 620px) {
     main {
         display: flex;
         width: 100%;
@@ -129,19 +129,22 @@ main {
     }
     #product img {
         background: url(images/image-product-desktop.jpg) no-repeat;
-        height: 50vmin;
+        height: 60vmin;
+        background-size: cover;
+        background-position: center;
         border-radius: 5px 0px 0px 5px;
     }
     .card {
-        width: 30%;
-        height: 50vmin;
+        width: 50%;
+        max-width: 500px;
+        height: 60vmin;
         border-radius: 0px 5px 5px 0px;
     }
     .card h2 {
         margin-left: -7rem;
     }
     .card p {
-        margin: 2rem;
+        margin: 1rem;
     }
     .cart {
         width: 80%;
