@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="root">
+        <header>
+            <div class="right">
+
+                <h1 id="title">sneakers</h1>
+                <nav class="menu">
+                    <img src="images/icon-menu.svg" alt="menu icon" class="iconPrincipal">
+                    <ul id="container_menu_mobile">
+                        <img src="images/icon-close.svg" id="close_menu" alt="">
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="left">
+                <div class="icons">
+
+                    <img src="images/icon-cart.svg" alt="cart" id="icon_cart">
+                    <span id="amount">0</span>
+                    <img src="images/image-avatar.png" alt="image-avatar" id="icon_profile">
+                </div>
+                <div class="cart">
+                    <h2>Cart</h2>
+                    <hr>
+                    <div class="container">
+
+                        <label class="label">your cart is empty</label>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </header>
+        <main>
+            <div class="left_main">
+
+                <div class="carousel">
+
+                </div>
+                <div class="container_miniatures">
+                    <div class="other_images"></div>
+                    <div class="other_images"></div>
+                    <div class="other_images"></div>
+                    <div class="other_images"></div>
+                </div>
+
+            </div>
+
+
+            <div class="content">
+                <h3>Sneaker Company</h3>
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="prices">
+                    $ <span id="normal_price">125.00</span>
+                    <div id="descount">50%</div>
+
+                    <p id="old_price">$250.00 </p>
+
+                </div>
+                <div class="buttons">
+                    <div class="input">
+                        <button class="selector">-</button>
+                        <span id="amount_product">0</span>
+                        <button class="selector">+</button>
+                    </div>
+                    </p>
+                    <button class="cart_button" onclick="read_product_info();">
+                        <img src="images/icon-cart.svg" alt="cart icon">
+                        Add to cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </main>
+        <div class="popup">
+            <img src="images/icon-close.svg" id="close_gallery" alt="">
+            <div id="carouselpop"></div>
+            <div class="miniatures_pop">
+                <div class="other_images"></div>
+                <div class="other_images"></div>
+                <div class="other_images"></div>
+                <div class="other_images"></div>
+
+            </div>
+
+        </div>
+        <hr>
+        <footer class="myInfo">
+            <span> Coded by </span>
+            <a href="https://github.com/develiezermartinez"> Eliezer Martinez </a>
+            <div class="social">
+                <p>Contact Me</p>
+                <a target="_blanck" href="https://www.instagram.com/develiezer__martinez/"><img src="images/instagram-.svg" alt="instagram- icon   " class="socialMedia"> </a>
+                <a target="_blanck" href="https://www.linkedin.com/in/eliezer-solano-martinez-987705205/"><img src="images/linkedin.svg" alt="linkedin -icon" class="socialMedia"></a>
+                <a target="_blanck" href="mailto:develiezermartinez@gmail.com?Subject=Quiero%20saber%20mas%20de%20ti"><img src="images/gmail.svg" alt="gmail -icon" class="socialMedia"></a>
+
+
+            </div>
+
+        </footer>
+
+
+
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
